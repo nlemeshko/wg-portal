@@ -34,7 +34,7 @@ RUN go clean -modcache; go mod tidy; make build-docker
 ######-
 # Here starts the main image
 ######-
-FROM buster
+FROM ubuntu
 
 # Setup timezone
 ENV TZ=Europe/Kiev
