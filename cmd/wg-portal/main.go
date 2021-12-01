@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"git.prolicht.digital/pub/healthcheck"
-	"github.com/h44z/wg-portal/internal/server"
+	"github.com/nlemeshko/wg-portal/internal/server"
 	"github.com/sirupsen/logrus"
 )
 

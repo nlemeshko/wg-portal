@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/h44z/wg-portal/internal/ldap"
-	"github.com/h44z/wg-portal/internal/users"
+	"github.com/nlemeshko/wg-portal/internal/ldap"
+	"github.com/nlemeshko/wg-portal/internal/users"
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
@@ -44,14 +44,14 @@ func (s *Server) SyncLdapWithUserDatabase() {
 	logrus.Info("ldap user synchronization stopped")
 }
 
-func (s Server)userIsInAdminGroup(ldapData *ldap.RawLdapData) bool {
+func (s Server) userIsInAdminGroup(ldapData *ldap.RawLdapData) bool {
 	if s.config.LDAP.AdminLdapGroup_ == nil {
-			return false
+		return false
 	}
 	for _, group := range ldapData.RawAttributes[s.config.LDAP.GroupMemberAttribute] {
-		var dn,_ = gldap.ParseDN(string(group))
+		var dn, _ = gldap.ParseDN(string(group))
 		if s.config.LDAP.AdminLdapGroup_.Equal(dn) {
-            return true
+			return true
 		}
 	}
 	return false

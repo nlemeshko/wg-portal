@@ -1,4 +1,4 @@
-module github.com/h44z/wg-portal
+module github.com/nlemeshko/wg-portal
 
 go 1.16
 

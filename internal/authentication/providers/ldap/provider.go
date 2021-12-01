@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-ldap/ldap/v3"
-	"github.com/h44z/wg-portal/internal/authentication"
-	ldapconfig "github.com/h44z/wg-portal/internal/ldap"
-	"github.com/h44z/wg-portal/internal/users"
+	"github.com/nlemeshko/wg-portal/internal/authentication"
+	ldapconfig "github.com/nlemeshko/wg-portal/internal/ldap"
+	"github.com/nlemeshko/wg-portal/internal/users"
 	"github.com/pkg/errors"
 )
 

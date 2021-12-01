@@ -8,8 +8,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/h44z/wg-portal/internal/users"
-	"github.com/h44z/wg-portal/internal/wireguard"
+	"github.com/nlemeshko/wg-portal/internal/users"
+	"github.com/nlemeshko/wg-portal/internal/wireguard"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/crypto/bcrypt"

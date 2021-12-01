@@ -11,9 +11,9 @@ import (
 
 	jsonpatch "github.com/evanphx/json-patch"
 	"github.com/gin-gonic/gin"
-	"github.com/h44z/wg-portal/internal/common"
-	"github.com/h44z/wg-portal/internal/users"
-	"github.com/h44z/wg-portal/internal/wireguard"
+	"github.com/nlemeshko/wg-portal/internal/common"
+	"github.com/nlemeshko/wg-portal/internal/users"
+	"github.com/nlemeshko/wg-portal/internal/wireguard"
 )
 
 // @title WireGuard Portal API
@@ -21,10 +21,10 @@ import (
 // @description WireGuard Portal API for managing users and peers.
 
 // @license.name MIT
-// @license.url https://github.com/h44z/wg-portal/blob/master/LICENSE.txt
+// @license.url https://github.com/nlemeshko/wg-portal/blob/master/LICENSE.txt
 
 // @contact.name WireGuard Portal Project
-// @contact.url https://github.com/h44z/wg-portal
+// @contact.url https://github.com/nlemeshko/wg-portal
 
 // @securityDefinitions.basic ApiBasicAuth
 // @in header

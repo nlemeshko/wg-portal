@@ -1,6 +1,6 @@
 package wireguard
 
-import "github.com/h44z/wg-portal/internal/common"
+import "github.com/nlemeshko/wg-portal/internal/common"
 
 type Config struct {
 	DeviceNames         []string `yaml:"devices" envconfig:"WG_DEVICES"`              // managed devices

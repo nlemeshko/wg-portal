@@ -5,10 +5,10 @@ import (
 	"reflect"
 	"runtime"
 
-	"github.com/h44z/wg-portal/internal/common"
-	"github.com/h44z/wg-portal/internal/ldap"
-	"github.com/h44z/wg-portal/internal/wireguard"
 	"github.com/kelseyhightower/envconfig"
+	"github.com/nlemeshko/wg-portal/internal/common"
+	"github.com/nlemeshko/wg-portal/internal/ldap"
+	"github.com/nlemeshko/wg-portal/internal/wireguard"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v3"

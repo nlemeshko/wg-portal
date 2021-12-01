@@ -19,11 +19,11 @@ var doc = `{
         "title": "{{.Title}}",
         "contact": {
             "name": "WireGuard Portal Project",
-            "url": "https://github.com/h44z/wg-portal"
+            "url": "https://github.com/nlemeshko/wg-portal"
         },
         "license": {
             "name": "MIT",
-            "url": "https://github.com/h44z/wg-portal/blob/master/LICENSE.txt"
+            "url": "https://github.com/nlemeshko/wg-portal/blob/master/LICENSE.txt"
         },
         "version": "{{.Version}}"
     },

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/h44z/wg-portal/internal/users"
+	"github.com/nlemeshko/wg-portal/internal/users"
 	csrf "github.com/utrack/gin-csrf"
 	"gorm.io/gorm"
 )

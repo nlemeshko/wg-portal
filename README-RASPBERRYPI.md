@@ -4,7 +4,7 @@ This readme only contains a detailed explanation of how to set up the WireGuard 
 
 ## Setup
 
-You can download prebuild binaries from the [release page](https://github.com/h44z/wg-portal/releases). If you want to build the binary yourself,
+You can download prebuild binaries from the [release page](https://github.com/nlemeshko/wg-portal/releases). If you want to build the binary yourself,
 use the following instructions:
 
 ### Building

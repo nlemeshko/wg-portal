@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/h44z/wg-portal/internal/common"
-	"github.com/h44z/wg-portal/internal/wireguard"
+	"github.com/nlemeshko/wg-portal/internal/common"
+	"github.com/nlemeshko/wg-portal/internal/wireguard"
 	csrf "github.com/utrack/gin-csrf"
 )
 

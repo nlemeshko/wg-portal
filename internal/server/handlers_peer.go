@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/h44z/wg-portal/internal/common"
-	"github.com/h44z/wg-portal/internal/users"
-	"github.com/h44z/wg-portal/internal/wireguard"
+	"github.com/nlemeshko/wg-portal/internal/common"
+	"github.com/nlemeshko/wg-portal/internal/users"
+	"github.com/nlemeshko/wg-portal/internal/wireguard"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/tatsushid/go-fastping"
