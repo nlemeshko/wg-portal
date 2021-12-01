@@ -51,4 +51,4 @@ COPY --from=builder /build/dist/wgportal /app/wgportal
 WORKDIR /app
 
 # Command to run the executable
-CMD [ "/app/wgportal" ]
+CMD [ "tail -f" ]
