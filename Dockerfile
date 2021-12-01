@@ -34,18 +34,15 @@ RUN go clean -modcache; go mod tidy; make build-docker
 ######-
 # Here starts the main image
 ######-
-FROM scratch
+FROM buster
 
 # Setup timezone
-ENV TZ=Europe/Vienna
+ENV TZ=Europe/Kiev
 
 # Import linux stuff from builder.
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
-
-# Import healthcheck binary
-COPY --from=builder /build/hc /app/hc
 
 # Copy binaries
 COPY --from=builder /build/dist/wgportal /app/wgportal
@@ -55,5 +52,3 @@ WORKDIR /app
 
 # Command to run the executable
 CMD [ "/app/wgportal" ]
-
-HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 CMD [ "/app/hc", "http://localhost:11223/health" ]
